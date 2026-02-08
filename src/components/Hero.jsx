@@ -1,6 +1,6 @@
 import Card from "./Card";
 import Navbar from "./Navbar";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.PNG";
 
 export default function Hero() {
   return (
