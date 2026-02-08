@@ -1,5 +1,5 @@
 import Card from "./Card";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.PNG";
 
 export default function BuildInfluence() {
   return (
