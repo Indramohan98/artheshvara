@@ -3,6 +3,12 @@ import Navbar from "./Navbar";
 import logo from "../assets/logo.PNG";
 
 export default function Hero() {
+
+  const handlePartershipClick = () => {
+    // window.open('https://docs.google.com/forms/d/e/1FAIpQLSe361oHxCkdJj5y2CLnAgyzfCQonptbe2GV9u00NNMx2lUB1A/viewform?embedded=true%22');
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSe361oHxCkdJj5y2CLnAgyzfCQonptbe2GV9u00NNMx2lUB1A/viewform?embedded=true%22';
+  };
+  
   return (
     <Card className="text-center relative overflow-hidden">
       {/* Background gradient effects */}
@@ -36,7 +42,9 @@ export default function Hero() {
         </p>
 
         {/* CTA Button */}
-        <button className="mt-6 md:mt-8 px-6 md:px-8 py-2.5 md:py-3 rounded-md bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-sm md:text-base font-semibold hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/30 transition-all duration-300">
+        <button 
+          onClick={handlePartershipClick}
+          className="mt-6 md:mt-8 px-6 md:px-8 py-2.5 md:py-3 rounded-md bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-sm md:text-base font-semibold hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/30 transition-all duration-300">
           Start a Partnership
         </button>
 

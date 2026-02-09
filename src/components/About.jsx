@@ -2,6 +2,11 @@ import Card from "./Card";
 import logo from "../assets/logo.PNG";
 
 export default function About() {
+  const handleCreatorClick = () => {
+    // window.open('https://docs.google.com/forms/d/e/1FAIpQLSc8REsdvppj_jQ1e0an6_ke8sosG2k_ZIX0_PYblf8MiH3ugQ/viewform?embedded=true', '_blank');
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc8REsdvppj_jQ1e0an6_ke8sosG2k_ZIX0_PYblf8MiH3ugQ/viewform?embedded=true';
+  };
+
   return (
     <Card className="text-center">
       {/* Logo */}
@@ -27,8 +32,11 @@ export default function About() {
       </p>
 
       {/* CTA Button */}
-      <button className="px-6 md:px-7 py-2.5 md:py-3 rounded-md bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-sm md:text-base font-semibold hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/30 transition-all duration-300">
-        Start a Partnership
+      <button 
+        onClick={handleCreatorClick}
+        className="px-6 md:px-7 py-2.5 md:py-3 rounded-md bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-sm md:text-base font-semibold hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/30 transition-all duration-300"
+      >
+        Are You A Creator?
       </button>
     </Card>
   );
